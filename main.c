@@ -29,6 +29,9 @@ main(int argc, char* argv[])
     }
 
     printf("t.x = %d, t.y = %d\n", t->x, t->y);
+    reset_arena(arena);
+    printf("t.x = %d, t.y = %d\n", t->x, t->y);
+    
 
     printf("offset: %ld, capacity: %ld, data[addr]: %p\n", arena->offset, arena->capacity, arena->data);
     free_arena(arena);

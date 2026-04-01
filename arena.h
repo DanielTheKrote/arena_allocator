@@ -53,5 +53,11 @@ arena_try_alloc(arena_t* arena, size_t size)
     return ptr;
 }
 
+void
+reset_arena(arena_t* arena)
+{
+    memset(arena->data, 0, arena->capacity);
+    arena->offset = 0;
+}
 
 #endif
