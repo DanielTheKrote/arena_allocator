@@ -36,10 +36,12 @@ create_new_arena()
 {
     char* data = malloc(sizeof(*data) * DEFAULT_ARENA_CAPACITY);
     if (NULL == data)
-    {
         return NULL;
-    }
+
     arena_t* new_arena = malloc(sizeof(*new_arena));
+
+    if (NULL == new_arena)
+        return NULL;
     
     new_arena->capacity = DEFAULT_ARENA_CAPACITY;
     new_arena->offset = 0;
