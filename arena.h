@@ -28,4 +28,12 @@ create_new_arena()
     return new_arena;
 }
 
+void
+free_arena(arena_t* arena)
+{
+    arena->capacity = 0;
+    arena->offset = 0;
+    free(arena->data);
+}
+
 #endif
