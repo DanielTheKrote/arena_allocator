@@ -94,5 +94,4 @@ reset_arena(arena_t* arena)
         reset_arena(arena->next);
 }
 
-
 #endif

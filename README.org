@@ -1,0 +1,9 @@
+#+title: Arena allocator
+#+author: Daniel Maturano
+#+date: Wed Apr  1 02:13:52 PM -03 2026
+
+A simple implementation for an arena allocator written in c, I made that with the ideia of using in some of my projects, and to actually learn something new.
+** Usage
+Just copy the "arena.h" to somewhere and include inside of your source code.
+
+
